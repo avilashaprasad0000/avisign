@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "412716454683",
+    "firebase_url": "https://avisign-96850.firebaseio.com",
+    "project_id": "avisign-96850",
+    "storage_bucket": "avisign-96850.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412716454683:android:dbce4c1a967a76c521b9be",
+        "android_client_info": {
+          "package_name": "com.example.avisign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412716454683-79jrh9hcs22oktsh7hohtle6ja3rmc86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.avisign",
+            "certificate_hash": "829f9d941d5f1466be21b806d86ceabd35b37e01"
+          }
+        },
+        {
+          "client_id": "412716454683-r0k8s9lvpoavj6qeom1j1r858lclo0o3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAigj-cWinausGhRlq-XMsbdsI-wOwFtsU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412716454683-r0k8s9lvpoavj6qeom1j1r858lclo0o3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
