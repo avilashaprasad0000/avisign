@@ -88,9 +88,9 @@ public class signup extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 pd.setVisibility(View.GONE);
                                 if (task.isSuccessful()) {
-                                    User_Details user_details = new User_Details(name, address, email, phone_number);
+                                    addDetails();
                                     //db.collection("User_Details").child(FirebaseAuth.getInstance().getCurrentUser.getUid().setValue(user_details).addOnSu);
-                                    dbDetails.add(user_details).addOnSuccessListener(signup.this,new OnSuccessListener<DocumentReference>() {
+                                    /*dbDetails.add(user_details).addOnSuccessListener(signup.this,new OnSuccessListener<DocumentReference>() {
                                         @Override
                                         public void onSuccess(DocumentReference documentReference) {
 
@@ -102,7 +102,8 @@ public class signup extends AppCompatActivity {
                                             Toast.makeText(signup.this, e.getMessage(), Toast.LENGTH_SHORT).show();
 
                                         }
-                                    });
+                                    });*/
+
 
                                     Toast.makeText(signup.this, "Registration is successful ! ", Toast.LENGTH_SHORT).show();
                                     Intent avi = new Intent(signup.this, profile.class);
@@ -127,6 +128,18 @@ public class signup extends AppCompatActivity {
                                 }
                             }
                         });
+            }
+        });
+    }
+    public void addDetails()
+    {
+
+
+        User_Details user_details=new User_Details(name,address,email,phone_number);
+        dbDetails.add(user_details).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(signup.this,"Details Submitted",Toast.LENGTH_SHORT).show();
             }
         });
     }
